@@ -1,0 +1,49 @@
+body,html {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    height:100%;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 8fr;
+}
+
+.sidebar {
+    background-color: lightyellow;
+    grid-area: 2/1/4/2;
+    display:grid;
+    grid-template-rows: 1fr 1fr 8fr;
+}
+
+.logo {
+    background-color: aquamarine;
+}
+
+.header {
+    background-color: lightblue;
+    grid-area: 1/2/3/4;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.searchBar {
+    background-color: lightgreen;
+}
+
+.profile {
+    background-color: lightsalmon;
+}
+
+.welcome {
+    background-color: lightseagreen;
+}
+
+.main-content {
+    background-color: lightpink;
+}
