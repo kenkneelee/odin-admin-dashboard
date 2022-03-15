@@ -28,8 +28,12 @@ h1 {
 
 h2 {
     display:inline;
-    margin:0;
-    padding:0;
+
+}
+
+h3 {
+    display:inline;
+    font-size: clamp(1rem, 1vw, 2rem); 
 }
 
 .sidebar {
@@ -79,6 +83,22 @@ a {
     grid-template-rows: 1fr 1fr;
 }
 
+#topIcon {
+    width: 40px;
+    border-radius:50%;
+}
+
+#botIcon {
+    width:60px;
+    border-radius: 50px;
+}
+
+.profile {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
 .searchBar {
     background-color: #cbd5e1;
     display:flex;
@@ -89,7 +109,7 @@ a {
 
 input {
     width:80%;
-    height:30px;
+    height:40%;
     border-radius:20px;
     font-size:18px;
     padding:2px 20px;
@@ -127,15 +147,27 @@ input {
     grid-template-rows: 1fr 1fr;
 }
 
+
+
 .projects {
     background-color: lightpink;
     grid-area: 1/1/3/2;
 }
 
 .projectCards {
+    height:80%;
     display: grid;
+    grid-gap: 5%;
+    margin: 5%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+.projectCard {
+    background-color: #cbd5e1;
+    padding:20px;
+    border-radius:10px;
+    box-shadow: 5px 5px 15px 0px #000000;
 }
 
 .announcements {
@@ -144,7 +176,17 @@ input {
 
 .announcementCards {
     display: grid;
+    height:75%;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5%;
+    margin: 5%;
+}
+
+.announcementCard {
+    background-color: #cbd5e1;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 15px -4px #000000;
 }
 
 .trending {
@@ -153,5 +195,16 @@ input {
 
 .trendingCards {
     display: grid;
+    height:60%;
+    grid-gap: 5%;
+    margin: 5%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+
+.trendingCard {
+    background-color: antiquewhite;
+    border-radius:20px;
+    padding:20px;
+    box-shadow: 5px 5px 15px -4px #000000;
+}
+
