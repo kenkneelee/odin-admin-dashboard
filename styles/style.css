@@ -26,6 +26,12 @@ h1 {
     display:inline;
 }
 
+h2 {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
 .sidebar {
     background-color: #1e293b;
     color:#cbd5e1;
