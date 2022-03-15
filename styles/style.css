@@ -87,11 +87,11 @@ a {
     grid-area: 1/2/3/4;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
 }
 
 #topIcon {
-    width: 30px;
+    height:40px;
     border-radius:50%;
 }
 
@@ -102,8 +102,13 @@ a {
 
 .profile {
     display:grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 3fr 1fr 2fr;
     align-items: center;
+    justify-content: center;
+}
+
+.profile h3 {
+    color: #1e293b;
 }
 
 .searchBar {
@@ -149,6 +154,7 @@ input {
     background-color: #1e293b;
     color:#cbd5e1;
     font-weight:700;
+    font-size:1rem;
 }
 
 .main-content {
